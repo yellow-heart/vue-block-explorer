@@ -14,6 +14,7 @@ body {
 </style>
 
 <script lang="ts">
+import json from '../loom_address.json'
 import { Component, Vue } from 'vue-property-decorator'
 import BootstrapVue from 'bootstrap-vue'
 import FontAwesome from '@fortawesome/fontawesome'
@@ -32,7 +33,7 @@ Vue.component('fa', FontAwesomeIcon)
 })
 export default class App extends Vue {
   defaultChainID = 'default'
-  allowedUrls = ['https://plasma.dappchains.com', 'http://127.0.0.1:46658']
+  allowedUrls = [json.loom_address, 'http://127.0.0.1:46658']
   defaultUrl = this.allowedUrls[0]
   mounted() {}
   beforeMount() {
