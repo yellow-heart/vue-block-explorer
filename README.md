@@ -18,3 +18,5 @@ yarn run build
 # auto-format TypeScript source files
 yarn run format
 ```
+
+to run Dockerfile, export LOOM_ADDRESS=address of choosing, if none localhost will still be available
